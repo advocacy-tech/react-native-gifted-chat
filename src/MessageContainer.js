@@ -107,9 +107,7 @@ export default class MessageContainer extends React.Component {
       console.warn('GiftedChat: `_id` is missing for message', JSON.stringify(message));
     }
     if (!message.user) {
-      if (!message.system) {
-        console.warn("GiftedChat: `user` is missing for message", JSON.stringify(message));
-      }
+      console.warn('GiftedChat: `user` is missing for message', JSON.stringify(message));
       message.user = {};
     }
 
@@ -143,7 +141,7 @@ export default class MessageContainer extends React.Component {
     return (
       <View
         ref='container'
-        style={styles.container}
+        style={[styles.container, this.props.bubbleContainerStyle]}
       >
         <ListView
           enableEmptySections={true}
