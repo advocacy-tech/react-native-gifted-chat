@@ -1,12 +1,9 @@
 {
   "name": "react-native-gifted-chat",
-<<<<<<< Updated upstream
-  "version": "0.2.9",
-=======
   "version": "0.9.0",
->>>>>>> Stashed changes
   "description": "The most complete chat UI for React Native",
-  "main": "index.js",
+  "main": "node_modules/expo/AppEntry.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FaridSafi/react-native-gifted-chat.git"
@@ -28,24 +25,6 @@
   },
   "homepage": "https://github.com/FaridSafi/react-native-gifted-chat#readme",
   "scripts": {
-<<<<<<< Updated upstream
-    "lint": "eslint . --ext .js,.jsx"
-  },
-  "devDependencies": {
-    "eslint": "3.19.0",
-    "eslint-config-airbnb": "15.0.2",
-    "eslint-config-cooperka": "0.2.3",
-    "eslint-plugin-import": "2.6.1",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-react": "7.1.0",
-    "eslint-plugin-react-native": "2.3.2"
-  },
-  "dependencies": {
-    "@expo/react-native-action-sheet": "^1.0.1",
-    "md5": "2.2.1",
-    "moment": "^2.19.0",
-    "prop-types": "15.5.10",
-=======
     "config:dev": "json -I -f package.json -e 'this.main=\"node_modules/expo/AppEntry.js\"'",
     "config:npm": "json -I -f package.json -e 'this.main=\"lib/index.js\"'",
     "lint": "tslint --project .",
@@ -112,15 +91,9 @@
   "dependencies": {
     "@expo/react-native-action-sheet": "^2.0.1",
     "moment": "^2.19.0",
->>>>>>> Stashed changes
     "react-native-communications": "2.2.1",
-    "react-native-invertible-scroll-view": "^1.1.0",
+    "react-native-iphone-x-helper": "^1.2.0",
     "react-native-lightbox": "^0.7.0",
-<<<<<<< Updated upstream
-    "react-native-parsed-text": "^0.0.19",
-    "shallowequal": "1.0.2",
-    "uuid": "3.1.0"
-=======
     "react-native-parsed-text": "^0.0.20",
     "react-native-video": "^3.2.1",
     "uuid": "3.3.0"
@@ -129,6 +102,5 @@
     "prop-types": "*",
     "react": "*",
     "react-native": "*"
->>>>>>> Stashed changes
   }
 }
