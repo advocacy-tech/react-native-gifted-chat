@@ -62,7 +62,7 @@ export default class MessageContainer extends React.PureComponent<MessageContain
     flatListRef?: RefObject<FlatList<IMessage>>;
     componentDidMount(): void;
     componentWillUnmount(): void;
-    componentWillReceiveProps(nextProps: MessageContainerProps): void;
+    // componentWillReceiveProps(nextProps: MessageContainerProps): void;
     attachKeyboardListeners: () => void;
     detachKeyboardListeners: () => void;
     renderFooter: () => {} | null | undefined;
