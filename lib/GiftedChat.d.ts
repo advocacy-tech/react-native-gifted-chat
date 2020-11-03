@@ -229,9 +229,9 @@ declare class GiftedChat extends React.Component<GiftedChatProps, GiftedChatStat
         actionSheet: () => any;
         getLocale: () => string;
     };
-    componentWillMount(): void;
+    // componentWillMount(): void;
     componentWillUnmount(): void;
-    componentWillReceiveProps(nextProps?: GiftedChatProps): void;
+    static getDerivedStatsFromProps(nextProps?: GiftedChatProps): void;
     initLocale(): void;
     setLocale(locale: string): void;
     getLocale: () => string;

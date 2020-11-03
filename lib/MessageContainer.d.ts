@@ -63,6 +63,7 @@ export default class MessageContainer extends React.PureComponent<MessageContain
     componentDidMount(): void;
     componentWillUnmount(): void;
     // componentWillReceiveProps(nextProps: MessageContainerProps): void;
+    static getDerivedStatsFromProps(nextProps: MessageContainerProps): void;
     attachKeyboardListeners: () => void;
     detachKeyboardListeners: () => void;
     renderFooter: () => {} | null | undefined;
